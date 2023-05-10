@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block nav %}
+<ul>
+    <li><a href="{% url 'registration' %}">REGISTRATION</a>
+        <ul class="dropdown-1">
+            {% comment %} <li><a href="{% url 'add individual' %}">ADD INDL</a></li>
+            <li><a href="{% url 'delete individual' %}">DELETE INDL</a></li>
+            <li><a href="{% url 'pull record' %}">PULL RECORD</a></li> {% endcomment %}
+        </ul>
+    </li>
+
+    <li><a href="{% url 'parade state' %}">PARADE STATE</a>
+        <ul class="dropdown-1">
+            {% comment %} <li><a href="{% url '' %}">RHQ</a></li>
+            <li><a href="{% url '' %}">HQ BTY</a></li>
+            <li><a href="{% url '' %}">P BTY</a></li>
+            <li><a href="{% url '' %}">Q BTY</a></li>
+            <li><a href="{% url '' %}">R BTY</a></li>
+            <li><a href="{% url '' %}">LRW</a></li>
+            <li><a href="{% url '' %}">REGIMENT</a></li> {% endcomment %}
+        </ul>
+    </li>
+
+    <li><a href="{% url 'bpet / ppt' %}">BPET / PPT</a>
+        <ul class="dropdown-1">
+        
+            {% comment %} <li><a href="{% url '' %}">SUB UNIT</a></li>
+            <li><a href="{% url '' %}">RESULT</a></li>
+            <li><a href="{% url '' %}">INDL RESULT</a></li>
+            <li><a href="{% url '' %}">ANALYSIS</a></li>
+            <li><a href="{% url '' %}">CONDUCT</a></li>
+            <li><a href="{% url '' %}">BPET</a></li>
+            <li><a href="{% url '' %}">CONDUCT PPT</a></li> {% endcomment %}
+        </ul>        
+    </li>
+
+    <li><a href="{% url 'mob coln'%}">MOB COLN</a></li>
+        <ul class="dropdown-1">
+            {% comment %} <li><a href="{% url '' %}">RECCE PARTY</a></li>
+            <li><a href="{% url '' %}">RD COLN</a></li>
+            <li><a href="{% url '' %}">A RAKE</a></li>
+            <li><a href="{% url '' %}">C RAKE</a></li>
+            <li><a href="{% url '' %}">AMN</a></li>
+            <li><a href="{% url '' %}">COLLECTION</a></li>
+            <li><a href="{% url '' %}">REAR PARTY</a></li> {% endcomment %}
+
+        </ul>
+</ul>
+{% endblock %}

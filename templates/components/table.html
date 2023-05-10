@@ -1,0 +1,27 @@
+
+
+    <div class="container">
+        <<table class="table table-bordered table-hover ">
+            <thead>
+                <tr>
+                    {% for header in headers %}
+                        <th> {{ header }} </th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    {% for col in row %}
+                        <td>{{ col }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+
+                <tr scope="row">
+                    {{ form }}
+                </tr> 
+            </tbody>
+        </table>
+        
+    </div>
